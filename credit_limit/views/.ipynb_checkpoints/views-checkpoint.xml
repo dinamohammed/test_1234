@@ -11,5 +11,17 @@
         </xpath>
         </field>
       </record>
+      
+      <record model="ir.ui.view" id="credit_limit_contact_inherit">
+        <field name="name">res.partner.form.credit.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="priority" eval="15"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='customer']" position="before">
+            <field name="credit_limit_value"/>
+        </xpath>
+        </field>
+      </record>
   </data>
 </odoo>
