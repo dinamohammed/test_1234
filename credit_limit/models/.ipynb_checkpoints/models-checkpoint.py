@@ -10,7 +10,7 @@ class saleorder(models.Model):
   #  @api.depends('credit_limit,credit_limit_value')
    # def _compute_credit_limit(self):
     #    for record in self :
-     #       record[('credit_limit')]=record.partner_invoice_id.credit > record.partner_invoice_id.credit_limit_value
+     #       record[('credit_limit')]=record.partner_invoice_id.credit > record.partner_id.total_due
             
             
 class resPartner(models.Model):
