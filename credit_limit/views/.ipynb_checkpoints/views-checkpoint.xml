@@ -18,8 +18,11 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="priority" eval="15"/>
         <field name="arch" type="xml">
-        <xpath expr="//field[@name='vat']" position="after">
-            <field name="credit_limit_value"/>
+        <xpath expr="//field[@name='property_payment_term_id']" position="after">
+            <field name="credit_limit" attrs="{'readonly':False}"/>
+        </xpath>
+        <xpath expr="//field[@name='credit_limit']" position="after">
+            <field name="credit"/>
         </xpath>
         </field>
       </record>
