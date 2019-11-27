@@ -7,7 +7,7 @@
         <field name="priority" eval="15"/>
         <field name="arch" type="xml">
         <xpath expr="//field[@name='fiscal_position_id']" position="after">
-            <field name="credit_limit"/>
+            <field name="credit_limit_bool" attrs="{'readonly':True}"/>
         </xpath>
         </field>
       </record>
