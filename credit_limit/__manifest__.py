@@ -7,7 +7,8 @@
         subtitle on modules listing or apps.openerp.com""",
 
     'description': """
-        Long description of module's purpose
+        This Module Calculates the credit limit of each customer & vendor.
+        Then, Raises alert when the customer exceedes the amount due assigned in. 
     """,
 
     'author': "My Company",
