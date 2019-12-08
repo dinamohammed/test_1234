@@ -26,5 +26,19 @@
         </xpath>
         </field>
       </record>
+      
+      
+      <record model="ir.ui.view" id="credit_limit_account_invoice_inherit">
+        <field name="name">account.invoice.form.credit.inherit</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_form"/>
+        <field name="priority" eval="15"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='partner_bank_id']" position="after">
+            <field name="credit_limit_bool" attrs="{'readonly':True}"/>
+        </xpath>
+        </field>
+      </record>
+      
   </data>
 </odoo>
