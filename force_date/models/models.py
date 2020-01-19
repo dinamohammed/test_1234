@@ -7,7 +7,7 @@ class stockinventory(models.Model):
     _inherit = "stock.inventory"
     
     
-     date = fields.Datetime(
+    date = fields.Datetime(
         'Inventory Date', required=True,
         default=fields.Datetime.now,
         help="If the inventory adjustment is not validated, date at which the theoritical quantities have been checked.\n"
